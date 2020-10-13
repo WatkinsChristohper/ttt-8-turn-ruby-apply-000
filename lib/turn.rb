@@ -24,7 +24,9 @@ def valid_move?(array, index)
 
 
 
-
+def move(array, index, character = "X")
+     array[index] = character
+  end
 
 def input_to_index(user_input)
      input = user_input.to_i - 1 
@@ -32,6 +34,3 @@ def input_to_index(user_input)
     end
 
 
-def move(array, index, character = "X")
-     array[index] = character
-  end
