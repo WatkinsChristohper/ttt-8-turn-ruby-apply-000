@@ -7,13 +7,6 @@ def display_board(board)
      end
 
 
-def valid_move?(array, index)
-      if index.between?(0, 8) && !position_taken?(array, index)
-       return true 
-     end
-  end
-
-
 def position_taken?(array, index)
      if array[index] == " " || array[index] == "" || array[index] == nil
         return false
@@ -21,6 +14,16 @@ def position_taken?(array, index)
         return true
      end
   end
+
+
+def valid_move?(array, index)
+      if index.between?(0, 8) && !position_taken?(array, index)
+       return true 
+     end
+  end
+
+
+
 
 
 def input_to_index(user_input)
