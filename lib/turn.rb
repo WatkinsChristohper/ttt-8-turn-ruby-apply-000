@@ -14,12 +14,6 @@ def valid_move?(array, index)
   end
 
 
-def input_to_index(user_input)
-     input = user_input.to_i - 1 
-      input 
-    end
-
-
 def position_taken?(array, index)
      if array[index] == " " || array[index] == "" || array[index] == nil
         return false
@@ -28,6 +22,11 @@ def position_taken?(array, index)
      end
   end
 
+
+def input_to_index(user_input)
+     input = user_input.to_i - 1 
+      input 
+    end
 
 
 def move(array, index, character = "X")
